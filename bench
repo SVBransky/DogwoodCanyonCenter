@@ -1,0 +1,117 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.divider{
+  width:100%;
+  padding: 1px;
+  height: 5px;
+}
+.column1 {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.column2 {
+  float: left;
+  width: 40%;
+  
+  padding-left: 8px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.column3 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 375px; /* Should be removed. Only for demonstration */
+  
+}
+#wrapper {
+	overflow: hidden;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header {
+	background: #18582f;
+	height: 50px;
+}
+			
+#header h1 {
+	margin: 0;
+	padding-top: 15px;
+  padding-left: 15px;
+  font-size: 22px;
+}
+h2{
+	margin: 0;
+	padding-top: 1px;
+  padding-left: 1px;
+
+}
+
+
+#body {
+	margin:0;
+	padding:0;
+	font-family: Sans-Serif;
+	line-height: 1.5em;
+}
+
+#footer {
+  clear: left;
+  width: 100%;
+  background: #18582f;
+  text-align: center;
+  padding: 15px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+</style>
+
+
+</head>
+<body>
+  <header id="header">
+
+      <h1><a href="https://svbransky.github.io/DogwoodCanyonCenter.github.io/menu.html">Home</a></h1>
+
+  </header>
+
+
+<div id="wrapper">
+  <div class="row">
+    <div class = "divider" style="background-color:#d8d8d8;"> 
+    </div>
+    <div class="column1" style="background-color:#18582f;">
+      
+      <img src="https://www.allaboutbirds.org/guide/assets/photo/311635911-480px.jpg" width="100%"
+      height="100%">
+    </div>
+    <div class="column2" style="background-color:#d8d8d8;">
+      <h2>The Blue Jay</h2>
+      <p>the blue jay is a bird that is blue and a jay</p>
+    </div>
+    <div class="column3" style="background-color:#d8d8d8;">
+      
+      <p>the blue jay is cool</p>
+    </div>
+  </div>
+</div>
+<footer id="footer">
+  
+</footer>
+</body>
+</html>
