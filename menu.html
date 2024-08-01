@@ -1,0 +1,128 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.divider{
+  width:100%;
+  padding: 1px;
+  height: 10px;
+}
+.column1 {
+  float: left;
+  width: 100%;
+  padding: 2px;
+  height: 290px; /* Should be removed. Only for demonstration */
+}
+.column2 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 800px; /* Should be removed. Only for demonstration */
+}
+
+#wrapper {
+	overflow: hidden;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header {
+	background: #18582f;
+    text-align: center;
+    
+	height: 5px;
+}
+			
+h1 {
+	margin: 20;
+	padding-top: 100px;
+  padding-left: 15px;
+  font-size: 60px;
+  color: whitesmoke;
+}
+h2 {
+  font-size: 25px;
+}
+#body {
+	margin:0;
+	padding:0;
+	font-family: Sans-Serif;
+	line-height: 1.5em;
+}
+main {
+				padding-bottom: 10010px;
+				margin-bottom: -10000px;
+				float: left;
+				width: 100%;
+			}
+
+
+#footer {
+  clear: left;
+  width: 100%;
+  background: #18582f;
+  text-align: center;
+  padding: 15px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+li {
+    text-decoration: none;
+    padding-bottom:5px;
+    list-style-type: none;
+    font-size: 16px;
+}
+p{
+    padding-top: 2px;
+}
+h3{
+    font-size: 19px;
+}
+</style>
+
+
+</head>
+<body>
+  <header id="header">
+    <h1>Dogwood Canyon Trails</h1>
+  </header>
+
+
+<div id="wrapper">
+  <div class="row">
+   
+    <div class="column1" style="background-color:#18582f;">
+      
+      <img src="https://dogwood.audubon.org/sites/default/files/styles/article_teaser/public/editorial-card-images/static_page/dsc_0209.jpg?itok=apvmR1-B" width="100%"
+      height="280">
+    </div>
+    <div class="column2" style="background-color:#d8d8d8;">
+      <h2>Points of Interest:</h2>
+      <p>These can be accessed via links found below or QR codes along the trail.</p>
+      <br>
+        <h3>Raptors</h3>
+        <li><a href="#">Link 1</a></li>
+        <h3>Owls</h3>
+        <li><a href="#">Link 2</a></li>
+        
+    
+    </div>
+    
+  </div>
+</div>
+<footer id="footer">
+  
+</footer>
+</body>
+</html>
